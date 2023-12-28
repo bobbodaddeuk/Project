@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>팀원 소개</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Gowun+Dodum&family=Nanum+Gothic:wght@400;700&display=swap');
+
+        * {
+            font-family: 'Gowun Dodum', sans-serif;
+        }
+
+        .introduce {
+            display: flex;
+            flex-direction: center;
+            justify-content: center;
+            align-items: column;
+            font-size: 50px;
+            color: skyblue;
+        }
+
+        .personal-page {
+            width: 100%;
+            height: 100%;
+            background-color: white;
+        }
+
+        .profile {
+            width: 400px;
+            height: 300px;
+            margin-left: 24%;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: column;
+            font-size: 30px;
+        }
+
+        .profile img {
+            width: 300px;
+            height: 300px;
+            border-radius: 100%;
+            margin-left: -70px;
+
+        }
+
+        .profile p {
+            margin-top: 10px;
+        }
+
+        .mytitle {
+            width: 300px;
+            height: auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: column;
+            font-size: 30px;
+            float: right;
+            margin-top: -320px;
+            margin-right: 20%;
+        }
+
+        .blog {
+            width: 300px;
+            height: auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: column;
+            font-size: 30px;
+            float: right;
+            margin-top: -100px;
+            margin-right: 20%;
+
+        }
+
+        .self-introduction {
+            width: 80%;
+            height: 30%;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            font-size: 21px;
+
+        }
+
+        .self-introduction p {
+            margin-top: 10px;
+        }
+
+        .box {
+            border: 2px solid skyblue;
+            margin: 100px 400px;
+            border-radius: 10px;
+        }
+
+        .blog img {
+            width: 50px;
+        }
+
+        .tistory {
+            width: 50px;
+            height: 50px;
+            background-image: url(https://th.bing.com/th/id/OIP.FvtumDFPu4oq5QerJOhvvAAAAA?w=162&h=167&c=7&r=0&o=5&pid=1.7);
+            border: none;
+            outline: none;
+            background-color: none;
+            background-size: cover;
+            position: relative;
+            top: 22px;
+        }
+
+        .github {
+            width: 60px;
+            height: 60px;
+            background-image: url(https://i.pinimg.com/736x/b1/5e/ed/b15eedbdafbbdbca3249e3942f4faf3b.jpg);
+            border: none;
+            outline: none;
+            background-color: none;
+            background-size: 60px 60px;
+            position: relative;
+            left: 50px;
+            bottom: 30px;
+        }
+
+        .mydog {
+            width: 120px;
+            height: 100px;
+            background-color: none;
+            border: none;
+            outline: none;
+            background-image: url(https://i.imgur.com/dzDFxcE.png);
+            background-size: cover;
+            z-index: -1;
+        }
+    </style>
+    <script>
+        function showtistory() {
+            window.location.href = 'https://woo001234.tistory.com/'
+        }
+
+        function showgithub() {
+            window.location.href = 'https://github.com/bobbodaddeuk'
+        }
+        function showdog() {
+            var image = document.getElementById('dog');
+            if (image.style.display === 'none') {
+                image.style.display = 'block';
+            } else {
+                image.style.display = 'none';
+            }
+
+        }
+    </script>
+</head>
+
+<body>
+    <div class="box">
+        <img id='dog' src="https://i.imgur.com/dzDFxcE.png" alt="퐁이" style="display: none;" />
+        <h1 class="introduce">팀원 소개</h1>
+        <div class="profile">
+            <img src="https://i.imgur.com/JAVOIgV.jpg" alt='우승원' />
+        </div>
+        <div class="mytitle">
+            <p>우승원</p>
+            <p>ENFP</p>
+
+        </div>
+        <div class="blog">
+            <button class="tistory" onclick="showtistory()"></button>
+            <button class="github" onclick="showgithub()"></button>
+        </div>
+        <div class="self-introduction">
+            <p>제 장점은 성격이 유순해서 남들과 잘 어울어질 수 있는 것입니다.
+            <p>협업 스타일은 남을 잘 이끌어주진 못하지만 맡은 일은 열심히 하는 편입니다.</p>귀여운 강아지 한마리 키우고 있습니다.취미는 컴퓨터게임이고 좋아하는 것은 친구들과 놀기입니다.
+            </p>
+        </div>
+        <button class="mydog" onclick="showdog()"></button>
+    </div>
+    </div>
+    </div>
+</body>
+
+</html>
